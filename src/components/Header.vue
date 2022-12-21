@@ -1,9 +1,11 @@
 <script>
+import JumboSection from './JumboSection.vue';
 import TopNavbar from './TopNavbar.vue';
 
 export default {
   components: {
     TopNavbar,
+    JumboSection,
   },
   data() {
     return {
@@ -42,6 +44,8 @@ export default {
 
     <!-- componente con menu -->
     <TopNavbar />
+    <!-- Jumbo e banner -->
+    <JumboSection />
   </header>
 </template>
 
