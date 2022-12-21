@@ -42,8 +42,14 @@ export default {
   </div>
 
   <!-- banner bottom jumbo (sales) -->
-  <div>
+  <div id="banner_bottom">
+    <div class="container">
+      <img src="img/food-transparent-5-200x112.png" alt="pet-food">
 
+      <p>Get &dollar;25 OFF your first purchase of our homemade pet food!</p>
+
+      <a href="#">Visit the shop</a>
+    </div>
   </div>
 
 </template>
@@ -112,6 +118,42 @@ export default {
       border-radius: 20px;
       background-color: $white;
       color: #000;
+    }
+  }
+}
+
+#banner_bottom {
+  color: $white;
+  font-size: 0.9rem;
+  height: 90px;
+  background-color: $kelp;
+  background-image: url('img/bg-transparent-3.png');
+  background-size: 220px;
+  background-position: top;
+
+  .container {
+    width: 750px;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+      padding-top: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: inherit;
+    }
+
+    p {
+      margin-left: 100px;
+    }
+
+    a {
+      margin-left: 20px;
+      color: $grey;
+      text-decoration: underline;
     }
   }
 }
