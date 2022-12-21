@@ -1,9 +1,9 @@
 <script>
-export default {
-  data() {
-    return {
+import KibbleSection from './KibbleSection.vue'
 
-    }
+export default {
+  components: {
+    KibbleSection,
   }
 }
 </script>
@@ -41,38 +41,7 @@ export default {
 
     <!-- croccantini -->
     <section id="croc">
-      <div class="kibble">
-        <h3>Kibble</h3>
-        <h5>Dry dog food</h5>
-        <img src="/img/food-transparent-18-200x210.png" alt="">
-        <div class="btn">
-          <a href="#">
-            Shop dry food
-          </a>
-        </div>
-      </div>
-
-      <div class="kibble">
-        <h3>Moist</h3>
-        <h5>Canned dog food</h5>
-        <img src="/img/food-transparent-17-200x210.png" alt="">
-        <div class="btn">
-          <a href="#">
-            Shop moist food
-          </a>
-        </div>
-      </div>
-
-      <div class="kibble">
-        <h3>Frozen</h3>
-        <h5>Freeze-dried dog food</h5>
-        <img src="/img/food-transparent-16-200x210.png" alt="">
-        <div class="btn">
-          <a href="#">
-            Shop frozen food
-          </a>
-        </div>
-      </div>
+      <KibbleSection />
     </section>
 
     <!-- Banner new arrivals -->
@@ -138,40 +107,6 @@ export default {
     width: inherit;
     display: flex;
     gap: 10px;
-
-    .kibble {
-      background-image: url('img/bg-transparent-3.png');
-      background-color: $kelp;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: calc(100% / 3 - 5px);
-      padding: 50px;
-      text-align: center;
-      margin-bottom: 60px;
-
-      h3 {
-        color: $white;
-        font-family: "Trocchi", serif;
-        font-weight: lighter;
-        font-size: 1.4rem;
-        margin-bottom: 15px;
-      }
-
-      h5 {
-        color: #599f64;
-        margin-bottom: 15px;
-      }
-
-      .btn {
-        font-size: 0.6rem;
-        margin: 0 auto;
-        width: 100px;
-        color: $white;
-        background-color: $leaf;
-        padding: 8px 0;
-        border-radius: 20px;
-      }
-    }
   }
 
   #new_arrivals {
