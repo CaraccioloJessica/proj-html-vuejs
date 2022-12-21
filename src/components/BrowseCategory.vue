@@ -1,11 +1,13 @@
 <script>
 import KibbleSection from './KibbleSection.vue'
 import CategoryList from './CategoryList.vue'
+import BestSellers from './BestSellers.vue';
 
 export default {
   components: {
     KibbleSection,
-    CategoryList
+    CategoryList,
+    BestSellers
   }
 }
 </script>
@@ -43,8 +45,19 @@ export default {
     </section>
 
     <!-- Best sellers -->
-    <section>
+    <section id="best_sellers">
+      <h3>All-time best sellers</h3>
+      <h2>Items everyone loves</h2>
+      <div class="btn">
+        <a href="#">
+          View all products
+        </a>
+      </div>
+    </section>
 
+    <!-- Prodotti con prezzi -->
+    <section id="best_item">
+      <BestSellers />
     </section>
   </div>
 </template>
@@ -120,6 +133,42 @@ export default {
       background-color: $white;
       color: #000;
     }
+  }
+
+  #best_sellers {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h3 {
+      width: inherit;
+      margin-bottom: 20px;
+      color: $leaf;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-family: "Trocchi", serif;
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      font-size: 0.6rem;
+      color: $white;
+      background-color: $leaf;
+      border-radius: 20px;
+      align-self: center;
+      padding: 8px 12px;
+    }
+  }
+
+  #best_item {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>
