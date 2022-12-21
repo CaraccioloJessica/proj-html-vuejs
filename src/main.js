@@ -3,6 +3,7 @@ import App from './App.vue'
 
 // Font
 import "@fontsource/work-sans"
+import "@fontsource/trocchi"
 
 // Fontawesome
 import { library } from '@fortawesome/fontawesome-svg-core'
