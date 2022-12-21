@@ -1,9 +1,11 @@
 <script>
 import KibbleSection from './KibbleSection.vue'
+import CategoryList from './CategoryList.vue'
 
 export default {
   components: {
     KibbleSection,
+    CategoryList
   }
 }
 </script>
@@ -21,22 +23,7 @@ export default {
 
     <!-- prodotti -->
     <section id="product">
-      <div class="card">
-        <img src="/img/product-9-300x300.jpg" alt="">
-        <span>Bed (1)</span>
-      </div>
-      <div class="card">
-        <img src="/img/product-3-300x300.jpg" alt="">
-        <span>Food (6)</span>
-      </div>
-      <div class="card">
-        <img src="/img/product-2-300x300.jpg" alt="">
-        <span>Toys (6)</span>
-      </div>
-      <div class="card">
-        <img src="/img/product-4-300x300.jpg" alt="">
-        <span>Transport (6)</span>
-      </div>
+      <CategoryList />
     </section>
 
     <!-- croccantini -->
@@ -90,17 +77,6 @@ export default {
     width: inherit;
     display: flex;
     gap: 10px;
-
-    .card {
-      width: 220px;
-      margin-bottom: 80px;
-      text-align: center;
-
-      img {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    }
   }
 
   #croc {
