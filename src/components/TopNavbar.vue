@@ -19,7 +19,7 @@ export default {
           <li v-for="link in store.links" :key="id">
             <!-- aggiunge classe active al link con valore true -->
             <a :class="{ active: link.current }" :href="link.url">{{ link.text }}
-              <!-- mostra chevron solo se il valore è true nell'array -->
+              <!-- mostra angle solo se il valore è true nell'array -->
               <span v-show="link.icon"><font-awesome-icon icon="fa-solid fa-angle-down" /></span>
             </a>
           </li>
