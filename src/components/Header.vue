@@ -1,5 +1,10 @@
 <script>
+import TopNavbar from './TopNavbar.vue';
+
 export default {
+  components: {
+    TopNavbar,
+  },
   data() {
     return {
 
@@ -34,12 +39,14 @@ export default {
         </span>
       </div>
     </div>
+
+    <!-- componente con menu -->
+    <TopNavbar />
   </header>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
-
 
 #logo_bar {
   height: 60px;
