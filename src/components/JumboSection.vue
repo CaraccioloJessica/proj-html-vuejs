@@ -7,24 +7,30 @@ export default {
   <!-- Banner top jumbo (shop info)-->
   <div id="banner_top">
     <div class="container">
-      <span>
-        <font-awesome-icon icon="fa-regular fa-map" />
-        <strong>International</strong>
-        Shipping Services
-      </span>
+      <a href="#">
+        <span>
+          <font-awesome-icon icon="fa-regular fa-map" />
+          <strong>International</strong>
+          Shipping Services
+        </span>
+      </a>
 
-      <span>
-        <font-awesome-icon icon="fa-regular fa-clock" />
-        See our
-        <strong>store hours</strong>
-        and services
-      </span>
+      <a href="#">
+        <span>
+          <font-awesome-icon icon="fa-regular fa-clock" />
+          See our
+          <strong>store hours</strong>
+          and services
+        </span>
+      </a>
 
-      <span>
-        <font-awesome-icon icon="fa-solid fa-check" />
-        We price match to give you the
-        <strong>best deals</strong>
-      </span>
+      <a href="#">
+        <span>
+          <font-awesome-icon icon="fa-solid fa-check" />
+          We price match to give you the
+          <strong>best deals</strong>
+        </span>
+      </a>
     </div>
   </div>
 
@@ -152,7 +158,7 @@ export default {
 
     a {
       margin-left: 20px;
-      color: $grey;
+      color: #bcc2bd;
       text-decoration: underline;
     }
   }
