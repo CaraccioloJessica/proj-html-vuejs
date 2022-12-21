@@ -5,15 +5,34 @@ export default {
 
 <template>
   <!-- Banner top jumbo (shop info)-->
-  <div>
+  <div id="banner_top">
+    <div class="container">
+      <span>
+        <font-awesome-icon icon="fa-regular fa-map" />
+        <strong>International</strong>
+        Shipping Services
+      </span>
 
+      <span>
+        <font-awesome-icon icon="fa-regular fa-clock" />
+        See our
+        <strong>store hours</strong>
+        and services
+      </span>
+
+      <span>
+        <font-awesome-icon icon="fa-solid fa-check" />
+        We price match to give you the
+        <strong>best deals</strong>
+      </span>
+    </div>
   </div>
 
   <!-- Jumbotron -->
   <div id="jumbo">
     <div class="container">
       <h1>FIND THE BEST ANIMAL SUPPLIES</h1>
-      <h2>We know animals are a part of your family, let us help take care of them.</h2>
+      <p>We know animals are a part of your family, let us help take care of them.</p>
       <div id="btn">
         <a href="#">
           Learn more about us
@@ -32,6 +51,26 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+#banner_top {
+  color: $white;
+  font-size: 0.7rem;
+  height: 50px;
+  background-color: $kelp;
+  background-image: url('img/bg-transparent-3.png');
+  background-size: 220px;
+  background-position: top;
+
+  .container {
+    height: inherit;
+    justify-content: space-around;
+    align-items: center;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+
 #jumbo {
   height: 550px;
   background-image:
@@ -48,7 +87,7 @@ export default {
 
 
     h1,
-    h2 {
+    p {
       margin-bottom: 30px;
     }
 
@@ -57,7 +96,7 @@ export default {
       font-size: 0.7rem;
     }
 
-    h2 {
+    p {
       font-family: "Trocchi", serif;
       font-weight: lighter;
       width: 450px;
