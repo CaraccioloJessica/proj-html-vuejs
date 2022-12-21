@@ -40,7 +40,7 @@ export default {
     </section>
 
     <!-- croccantini -->
-    <section>
+    <section id="croc">
       <div class="kibble">
         <h3>Kibble</h3>
         <h5>Dry dog food</h5>
@@ -76,8 +76,14 @@ export default {
     </section>
 
     <!-- Banner new arrivals -->
-    <section>
-
+    <section id="new_arrivals">
+      <h1>FIND THE BEST ANIMAL SUPPLIES</h1>
+      <p>New arrivals weekly</p>
+      <div id="btn">
+        <a href="#">
+          Learn more about us
+        </a>
+      </div>
     </section>
 
     <!-- Best sellers -->
@@ -114,11 +120,11 @@ export default {
   #product {
     width: inherit;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
 
     .card {
       width: 220px;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       text-align: center;
 
       img {
@@ -128,17 +134,20 @@ export default {
     }
   }
 
-  section {
+  #croc {
     width: inherit;
     display: flex;
     gap: 10px;
 
     .kibble {
+      background-image: url('img/bg-transparent-3.png');
+      background-color: $kelp;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: calc(100% / 3 - 5px);
       padding: 50px;
       text-align: center;
-      background-color: $kelp;
-      width: calc(100% /3);
-      margin-bottom: 30px;
+      margin-bottom: 60px;
 
       h3 {
         color: $white;
@@ -149,7 +158,8 @@ export default {
       }
 
       h5 {
-        color: $leaf;
+        color: #599f64;
+        margin-bottom: 15px;
       }
 
       .btn {
@@ -161,6 +171,43 @@ export default {
         padding: 8px 0;
         border-radius: 20px;
       }
+    }
+  }
+
+  #new_arrivals {
+    color: $white;
+    width: inherit;
+    height: 350px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/banner-3-2x-scaled.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-weight: lighter;
+      font-size: 0.7rem;
+    }
+
+    p {
+      margin: 20px 0;
+      font-family: "Trocchi", serif;
+      font-weight: lighter;
+      font-size: 2.1rem;
+    }
+
+    #btn {
+      text-align: center;
+      width: 150px;
+      font-weight: bold;
+      font-size: 0.6rem;
+      padding: 8px 10px;
+      border-radius: 20px;
+      background-color: $white;
+      color: #000;
     }
   }
 }
