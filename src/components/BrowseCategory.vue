@@ -35,7 +35,7 @@ export default {
 
     <!-- Banner new arrivals -->
     <section id="new_arrivals">
-      <h1>FIND THE BEST ANIMAL SUPPLIES</h1>
+      <h3>FIND THE BEST ANIMAL SUPPLIES</h3>
       <p>New arrivals weekly</p>
       <div id="btn">
         <a href="#">
@@ -109,7 +109,7 @@ export default {
     flex-direction: column;
     justify-content: center;
 
-    h1 {
+    h3 {
       font-weight: lighter;
       font-size: 0.7rem;
     }
