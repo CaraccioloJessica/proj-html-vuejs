@@ -111,6 +111,7 @@ export default {
   background-size: 200px;
   background-repeat: repeat-x;
   color: $white;
+  margin-bottom: 70px;
 
   .container {
     height: inherit;
