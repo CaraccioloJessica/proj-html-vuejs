@@ -10,6 +10,7 @@ export default {
           image: '/img/product-8-300x300.jpg',
           price: '$18.00 - $26.00',
           sales: false,
+          before: '',
         },
         {
           id: '2',
@@ -17,6 +18,7 @@ export default {
           image: '/img/product-2-300x300.jpg',
           price: '$29.00',
           sales: false,
+          before: '',
         },
         {
           id: '3',
@@ -24,6 +26,7 @@ export default {
           image: '/img/product-3-300x300.jpg',
           price: '$18.00',
           sales: true,
+          before: '$35.00', //prezzo prima dello sconto
         },
         {
           id: '4',
@@ -31,6 +34,7 @@ export default {
           image: '/img/product-4-300x300.jpg',
           price: '$29.00',
           sales: false,
+          before: '',
         },
         {
           id: '5',
@@ -38,6 +42,7 @@ export default {
           image: '/img/product-5-300x300.jpg',
           price: '$35.00',
           sales: false,
+          before: '',
         },
         {
           id: '6',
@@ -45,6 +50,7 @@ export default {
           image: '/img/product-10-300x300.jpg',
           price: '$16.00',
           sales: false,
+          before: '',
         },
       ]
 
@@ -65,7 +71,9 @@ export default {
         <!-- al passaggio del mouse il div.check viene visualizzato e all'uscita si nasconde -->
         <img :src="item.image" :alt="item.title">
         <h5>{{ item.title }}</h5>
-        <span id="sales" v-show="item.sales">&dollar;35.00</span>
+        <span id="sales" v-show="item.sales">
+          {{ item.before }} <!-- prezzo prima dello sconto -->
+        </span>
         <span>{{ item.price }}</span>
         <span id="tag" v-show="item.sales">Sale!</span>
 

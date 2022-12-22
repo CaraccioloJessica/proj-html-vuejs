@@ -8,28 +8,32 @@ export default {
           title: 'Transport cage',
           image: '/img/product-21-200x200.jpg',
           price: '$25.00',
-          sales: false
+          sales: false,
+          before: '',
         },
         {
           id: '2',
           title: 'Dog leash',
           image: '/img/product-20-200x200.jpg',
           price: '$25.00',
-          sales: false
+          sales: false,
+          before: '',
         },
         {
           id: '3',
           title: 'Animal transport cage',
           image: '/img/product-16-200x200.jpg',
           price: '$25.00',
-          sales: true
+          sales: true,
+          before: '$35.00', //prezzo prima dello sconto
         },
         {
           id: '4',
           title: 'Colorful cat leash',
           image: '/img/product-11-200x200.jpg',
           price: '$12.00',
-          sales: false
+          sales: false,
+          before: '',
         }
       ]
 
@@ -43,7 +47,9 @@ export default {
     @mouseout="item.isHovered = false">
     <img :src="item.image" :alt="item.title">
     <h5>{{ item.title }}</h5>
-    <span id="sales" v-show="item.sales">&dollar;35.00</span>
+    <span id="sales" v-show="item.sales">
+      {{ item.before }} <!-- prezzo prima dello sconto -->
+    </span>
     <span>{{ item.price }}</span>
 
     <!-- View cart icon on hover -->
