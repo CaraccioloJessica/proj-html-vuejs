@@ -98,7 +98,7 @@ export default {
   width: 900px;
   background-image: linear-gradient(0deg, #fcfaf9 0%, rgba(0, 0, 0, 0) 40%), url('img/banner-7-2x-scaled.jpg');
   background-size: cover;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   position: relative;
   top: -50px;
   display: flex;
@@ -110,8 +110,6 @@ export default {
 
     h2 {
       color: $kelp;
-      font-family: "Trocchi", serif;
-      font-weight: lighter;
       font-size: 1.7rem;
 
     }

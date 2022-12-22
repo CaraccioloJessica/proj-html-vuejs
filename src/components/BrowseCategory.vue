@@ -73,8 +73,6 @@ export default {
 
     h2 {
       color: $kelp;
-      font-family: "Trocchi", serif;
-      font-weight: lighter;
       margin-bottom: 20px;
     }
 
@@ -150,8 +148,6 @@ export default {
     }
 
     h2 {
-      font-family: "Trocchi", serif;
-      font-weight: lighter;
       font-size: 1.5rem;
     }
 
