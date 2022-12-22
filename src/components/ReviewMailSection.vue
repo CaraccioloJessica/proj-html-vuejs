@@ -33,6 +33,17 @@ export default {
     </div>
   </section>
 
+  <section id="mail_banner">
+    <div class="subscribe">
+      <h2>Join our newsletter</h2>
+      <p>Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
+
+      <form action="#">
+        <input type="email" placeholder="Insert your email...*" name="mail" required>
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -77,6 +88,56 @@ export default {
       span {
         font-size: 0.75rem;
         color: $grey;
+      }
+    }
+  }
+}
+
+#mail_banner {
+  height: 330px;
+  width: 900px;
+  background-image: linear-gradient(0deg, #fcfaf9 0%, rgba(0, 0, 0, 0) 40%), url('img/banner-7-2x-scaled.jpg');
+  background-size: cover;
+  margin: 0 auto 50px;
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+
+  .subscribe {
+    width: 55%;
+    padding-left: 70px;
+
+    h2 {
+      color: $kelp;
+      font-family: "Trocchi", serif;
+      font-weight: lighter;
+      font-size: 1.7rem;
+
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin: 30px 0;
+      line-height: 1.5;
+    }
+
+    form {
+      input[type=submit] {
+        cursor: pointer;
+        background-color: $leaf;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 40px;
+        margin-left: 20px;
+      }
+
+      input[type=email] {
+        background-color: $dawn;
+        padding: 12px;
+        width: 60%;
+        border-radius: 20px;
+        font-size: 0.7rem;
       }
     }
   }
