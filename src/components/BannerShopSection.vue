@@ -26,6 +26,30 @@ export default {
       </div>
     </div>
   </section>
+
+  <section id="kelp">
+    <div class="container">
+      <div id="icons">
+        <font-awesome-icon icon="fa-solid fa-truck" />
+        <span>Free worldwide deliveries</span>
+      </div>
+
+      <div id="icons">
+        <font-awesome-icon icon="fa-regular fa-map" />
+        <span>Find stores near you</span>
+      </div>
+
+      <div id="icons">
+        <font-awesome-icon icon="fa-solid fa-dollar" />
+        <span>Best prices guaranteed</span>
+      </div>
+
+      <div id="icons">
+        <font-awesome-icon icon="fa-regular fa-credit-card" />
+        <span>All credit card accepted</span>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -77,6 +101,37 @@ export default {
   .new {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('img/banner-9-2x.jpg');
+  }
+}
+
+#kelp {
+  background-color: $kelp;
+  height: 200px;
+  background-image: url('img/bg-transparent-3.png');
+  background-size: 200px;
+  background-repeat: repeat-x;
+  color: $white;
+
+  .container {
+    height: inherit;
+    align-items: center;
+    gap: 32px;
+
+    #icons {
+      width: 200px;
+      text-align: center;
+
+      svg {
+        width: inherit;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      span {
+        color: $grey;
+        font-size: 0.75rem;
+      }
+    }
   }
 }
 </style>
