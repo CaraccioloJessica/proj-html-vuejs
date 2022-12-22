@@ -49,6 +49,9 @@ export default {
 <template>
   <section>
     <div class="container">
+      <h2>New products arrival</h2>
+      <p>Latest products</p>
+
       <div class="card" v-for="item in items" :key="id">
         <img :src="item.image" :alt="item.title">
         <h5>{{ item.title }}</h5>
@@ -63,43 +66,64 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.card {
-  position: relative;
-  width: 300px;
-  margin-bottom: 20px;
-  padding: 10px;
-  text-align: center;
+.container {
+  margin-bottom: 80px;
 
-  img {
-    width: 100%;
-    margin-bottom: 10px;
+  h2,
+  p {
+    width: inherit;
+    text-align: center;
   }
 
-  h5 {
-    font-weight: lighter;
+  h2 {
+    color: $kelp;
   }
 
-  #sales {
-    font-size: 0.6rem;
-    margin-right: 5px;
-    text-decoration: line-through;
-    text-decoration-color: #000;
-  }
-
-  span {
+  p {
+    margin: 20px 0 30px;
+    font-weight: bold;
     font-size: 0.8rem;
     color: $leaf;
   }
 
-  #tag {
-    font-size: 0.7rem;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: $white;
-    background-color: $leaf;
-    padding: 5px;
-    border-radius: 50%;
+  .card {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font-weight: lighter;
+    }
+
+    #sales {
+      font-size: 0.6rem;
+      margin-right: 5px;
+      text-decoration: line-through;
+      text-decoration-color: #000;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: $leaf;
+    }
+
+    #tag {
+      font-size: 0.7rem;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: $white;
+      background-color: $leaf;
+      padding: 5px;
+      border-radius: 50%;
+    }
   }
 }
 </style>
