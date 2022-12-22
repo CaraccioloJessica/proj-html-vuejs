@@ -1,11 +1,13 @@
 <script>
 import Header from './components/Header.vue';
 import BrowseCategory from './components/BrowseCategory.vue';
+import ReviewMailSection from './components/ReviewMailSection.vue';
 
 export default {
   components: {
     Header,
     BrowseCategory,
+    ReviewMailSection
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
 
   <main>
     <BrowseCategory />
+    <ReviewMailSection />
 
   </main>
 
