@@ -57,7 +57,7 @@ export default {
 
 .container {
   gap: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
   h2 {
     width: inherit;
@@ -91,10 +91,10 @@ export default {
     text-align: center;
     font-size: 0.6rem;
     margin: 0 auto;
-    width: 100px;
+    width: 120px;
     color: $white;
     background-color: $leaf;
-    padding: 8px 0;
+    padding: 10px 12px;
     border-radius: 20px;
   }
 }
