@@ -4,24 +4,28 @@ export default {
     return {
       items: [
         {
+          id: '1',
           title: 'Transport cage',
           image: '/img/product-21-200x200.jpg',
           price: '$25.00',
           sales: false
         },
         {
+          id: '2',
           title: 'Dog leash',
           image: '/img/product-20-200x200.jpg',
           price: '$25.00',
           sales: false
         },
         {
+          id: '3',
           title: 'Animal transport cage',
           image: '/img/product-16-200x200.jpg',
           price: '$25.00',
           sales: true
         },
         {
+          id: '4',
           title: 'Colorful cat leash',
           image: '/img/product-11-200x200.jpg',
           price: '$12.00',
@@ -35,11 +39,18 @@ export default {
 </script>
 
 <template>
-  <div class="card" v-for="item in items" :key="id">
+  <div class="card" v-for="item in items" :key="id" @mouseover="item.isHovered = true"
+    @mouseout="item.isHovered = false">
     <img :src="item.image" :alt="item.title">
     <h5>{{ item.title }}</h5>
     <span id="sales" v-show="item.sales">&dollar;35.00</span>
     <span>{{ item.price }}</span>
+
+    <!-- View cart icon on hover -->
+    <div class="check" v-show="item.isHovered">
+      <font-awesome-icon icon="fa-regular fa-circle-check" />
+      <span>VIEW CART</span>
+    </div>
   </div>
 </template>
 
@@ -47,6 +58,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .card {
+  position: relative;
   width: 200px;
   margin-bottom: 80px;
   text-align: center;
@@ -70,6 +82,18 @@ export default {
   span {
     font-size: 0.8rem;
     color: $leaf;
+  }
+
+  .check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+
+    span {
+      color: $white;
+    }
   }
 }
 </style>
