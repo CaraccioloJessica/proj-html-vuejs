@@ -93,7 +93,7 @@ export default {
   #croc {
     width: inherit;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
   }
 
   #new_arrivals {

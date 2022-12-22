@@ -49,10 +49,15 @@ export default {
   background-color: $kelp;
   background-repeat: no-repeat;
   background-size: contain;
-  width: calc(100% / 3 - 5px);
+  width: 32.5%;
   padding: 50px;
   text-align: center;
   margin-bottom: 60px;
+
+  &:hover {
+    transform: scale(1.04);
+    background-color: #1F3821;
+  }
 
   h3 {
     color: $white;
