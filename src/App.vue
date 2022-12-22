@@ -6,6 +6,7 @@ import BlogSection from './components/BlogSection.vue';
 import BannerShopSection from './components/BannerShopSection.vue';
 import Shop from './components/Shop.vue';
 import FooterTop from './components/FooterTop.vue';
+import FooterBottom from './components/FooterBottom.vue';
 
 export default {
   components: {
@@ -15,7 +16,8 @@ export default {
     BlogSection,
     BannerShopSection,
     Shop,
-    FooterTop
+    FooterTop,
+    FooterBottom
   }
 }
 </script>
@@ -33,6 +35,7 @@ export default {
 
   <footer>
     <FooterTop />
+    <FooterBottom />
   </footer>
 </template>
 
