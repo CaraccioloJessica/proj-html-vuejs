@@ -124,6 +124,11 @@ export default {
       border-radius: 20px;
       background-color: $white;
       color: #000;
+
+      &:hover {
+        color: $white;
+        background-color: $leaf;
+      }
     }
   }
 }

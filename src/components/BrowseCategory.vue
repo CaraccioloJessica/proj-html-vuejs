@@ -130,6 +130,11 @@ export default {
       border-radius: 20px;
       background-color: $white;
       color: #000;
+
+      &:hover {
+        color: $white;
+        background-color: $leaf;
+      }
     }
   }
 
@@ -158,6 +163,10 @@ export default {
       border-radius: 20px;
       align-self: center;
       padding: 8px 12px;
+
+      &:hover {
+        background-color: #2A542A;
+      }
     }
   }
 

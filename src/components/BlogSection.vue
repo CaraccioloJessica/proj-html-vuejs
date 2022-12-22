@@ -96,6 +96,10 @@ export default {
     background-color: $leaf;
     padding: 10px 12px;
     border-radius: 20px;
+
+    &:hover {
+      background-color: #2A542A;
+    }
   }
 }
 </style>

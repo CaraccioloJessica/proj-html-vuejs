@@ -128,6 +128,10 @@ export default {
         border-radius: 20px;
         padding: 10px 40px;
         margin-left: 20px;
+
+        &:hover {
+          background-color: #2A542A;
+        }
       }
 
       input[type=email] {
