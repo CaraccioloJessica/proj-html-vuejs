@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      // Array dei croccantini
       food: [
         {
           title: 'Kibble',
@@ -29,6 +30,7 @@ export default {
 </script>
 
 <template>
+  <!-- Cicla nell'array food e stampa titolo, tipologia, immagine e testo bottone -->
   <div class="kibble" v-for="kibble in food" :key="id">
     <h3>{{ kibble.title }}</h3>
     <h5>{{ kibble.type }}</h5>

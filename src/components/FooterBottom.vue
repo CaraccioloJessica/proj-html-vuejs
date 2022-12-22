@@ -1,4 +1,5 @@
 <script>
+// importa store per versione modificata navbar
 import { store } from '../store.js'
 
 export default {
@@ -14,7 +15,7 @@ export default {
   <section id="kelp">
     <nav>
       <ul>
-        <!-- Cicla nell'array dei footerLinks per la navigazione -->
+        <!-- Cicla nell'array dei footerLinks per la navbar -->
         <li v-for="link in store.footerLinks" :key="id">
           <a :class="{ active: link.current }" :href="link.url">{{ link.text }}
           </a>
@@ -22,21 +23,27 @@ export default {
       </ul>
     </nav>
 
+    <!-- Icone brand social -->
     <div id="brand">
+      <!-- facebook -->
       <a href="#">
         <font-awesome-icon icon="fa-brands fa-facebook-f" />
       </a>
+      <!-- twitter -->
       <a href="#">
         <font-awesome-icon icon="fa-brands fa-twitter" />
       </a>
+      <!-- instagram -->
       <a href="#">
         <font-awesome-icon icon="fa-brands fa-instagram" />
       </a>
+      <!-- youtube -->
       <a href="#">
         <font-awesome-icon icon="fa-brands fa-youtube" />
       </a>
     </div>
 
+    <!-- parte del copyright del tema -->
     <div id="copyright">
       <span>&copy; Copyright 2012 - 2020 &vert; Avada Theme by ThemeFusion &vert; All Rights Reserved &vert; Powered by
         Wordpress</span>

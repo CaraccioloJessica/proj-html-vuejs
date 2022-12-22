@@ -1,14 +1,15 @@
 <script>
 export default {
-
 }
 </script>
 
 <template>
   <section id="kelp_bg">
+    <!-- Users testimonials -->
     <div class="container">
       <h2>Users testimonials</h2>
 
+      <!-- testimonial 1 -->
       <div class="testimonials">
         <img src="/img/avatar-3-200x200.jpg" alt="">
         <p>
@@ -16,6 +17,8 @@ export default {
         </p>
         <span>Lisa Smith, ThemeFusion</span>
       </div>
+
+      <!-- testimonial 2 -->
       <div class="testimonials">
         <img src="/img/avatar-1-200x200.jpg" alt="">
         <p>
@@ -23,6 +26,8 @@ export default {
         </p>
         <span>Melissa Green, ThemeFusion</span>
       </div>
+
+      <!-- testimonial 3 -->
       <div class="testimonials">
         <img src="/img/avatar-4-200x200.jpg" alt="">
         <p>
@@ -33,11 +38,13 @@ export default {
     </div>
   </section>
 
+  <!-- Banner con form per email -->
   <section id="mail_banner">
     <div class="subscribe">
       <h2>Join our newsletter</h2>
       <p>Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
 
+      <!-- Input email con campo required e bottone submit -->
       <form action="#">
         <input type="email" placeholder="Insert your email...*" name="mail" required>
         <input type="submit" value="Subscribe">

@@ -1,11 +1,12 @@
 <script>
 export default {
-
 }
 </script>
 
 <template>
   <section id="banner">
+
+    <!-- div con background image e bottone che rimanda ai prodotti -->
     <div class="popular">
       <h3>FIND THE BEST ANIMAL SUPPLIES</h3>
       <p>Popular accessories</p>
@@ -16,6 +17,7 @@ export default {
       </div>
     </div>
 
+    <!-- div con background image e bottone che rimanda ai prodotti -->
     <div class="new">
       <h3>FIND THE BEST FOOD</h3>
       <p>New food arrival</p>
@@ -27,23 +29,28 @@ export default {
     </div>
   </section>
 
+  <!-- Sezione con icone informative su acquisto e pagamento-->
   <section id="kelp">
     <div class="container">
+      <!-- Spedizione -->
       <div id="icons">
         <font-awesome-icon icon="fa-solid fa-truck" />
         <span>Free worldwide deliveries</span>
       </div>
 
+      <!-- Negozi vicini -->
       <div id="icons">
         <font-awesome-icon icon="fa-regular fa-map" />
         <span>Find stores near you</span>
       </div>
 
+      <!-- Prezzi migliori -->
       <div id="icons">
         <font-awesome-icon icon="fa-solid fa-dollar" />
         <span>Best prices guaranteed</span>
       </div>
 
+      <!-- Carte di credito -->
       <div id="icons">
         <font-awesome-icon icon="fa-regular fa-credit-card" />
         <span>All credit card accepted</span>

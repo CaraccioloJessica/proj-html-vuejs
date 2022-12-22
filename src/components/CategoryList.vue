@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      // Array di categorie prodotti
       categories: [
         {
           title: 'Bed (1)',
@@ -27,9 +28,12 @@ export default {
 </script>
 
 <template>
+  <!-- Cicla nell'array categorie e stampa immagine e titolo -->
   <div class="card" v-for="category in categories" :key="id">
-    <img :src="category.image" :alt="category.title">
-    <span>{{ category.title }}</span>
+    <a href="#">
+      <img :src="category.image" :alt="category.title">
+      <span>{{ category.title }}</span>
+    </a>
   </div>
 </template>
 

@@ -1,4 +1,5 @@
 <script>
+// importo store per array link
 import { store } from '../store.js'
 
 export default {

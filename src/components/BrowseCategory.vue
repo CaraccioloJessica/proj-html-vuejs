@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="container">
-    <!-- Categorie -->
+    <!-- Categorie-->
     <section id="category">
       <h2>Browse by category</h2>
       <p>
@@ -23,12 +23,12 @@ export default {
       </p>
     </section>
 
-    <!-- prodotti -->
+    <!-- Componente con array di categorie prodotti -->
     <section id="product">
       <CategoryList />
     </section>
 
-    <!-- croccantini -->
+    <!-- Componente con array di croccantini -->
     <section id="croc">
       <KibbleSection />
     </section>
@@ -44,7 +44,7 @@ export default {
       </div>
     </section>
 
-    <!-- Best sellers -->
+    <!-- Prodotti best sellers -->
     <section id="best_sellers">
       <h3>All-time best sellers</h3>
       <h2>Items everyone loves</h2>

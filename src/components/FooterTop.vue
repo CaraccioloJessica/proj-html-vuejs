@@ -1,21 +1,20 @@
 <script>
 export default {
-
 }
 </script>
 
 <template>
   <section id="kelp">
     <div class="container">
-      <!-- Info company -->
+      <!-- Info e contatti company -->
       <div class="card">
         <img src="/img/mobile-light-pet-logo-2x-200x52.png" alt="logo">
-        <h6>1234 Avada Avenue Avadaville</h6>
-        <h6>info@your-company.com</h6>
-        <h6>Call us: (1) 234 5678</h6>
+        <h4>1234 Avada Avenue Avadaville</h4>
+        <h4>info@your-company.com</h4>
+        <h4>Call us: (1) 234 5678</h4>
       </div>
 
-      <!-- Shop by brand -->
+      <!-- Shop by brand lista-->
       <div class="card">
         <h3>Shop by brand</h3>
         <ul>
@@ -43,7 +42,7 @@ export default {
 
       </div>
 
-      <!-- Useful links -->
+      <!-- Useful links lista-->
       <div class="card">
         <h3>Useful links</h3>
         <ul>
@@ -71,10 +70,11 @@ export default {
 
       </div>
 
-      <!-- Newsletter -->
+      <!-- Newsletter email form-->
       <div class="card form">
         <h3>Subscribe to our newsletter</h3>
 
+        <!-- email form campo richiesto e bottone submit -->
         <form action="#">
           <input type="email" placeholder="Insert your email...*" name="mail" required>
           <input type="submit" value="Subscribe">
@@ -105,7 +105,8 @@ export default {
         margin-bottom: 20px;
       }
 
-      h6 {
+      h4 {
+        font-size: 0.7rem;
         font-weight: lighter;
         margin: 10px 0;
       }

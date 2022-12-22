@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      // Array con ultimi arrivi del negozio
       items: [
         {
           id: '1',
@@ -58,15 +59,17 @@ export default {
       <h2>New products arrival</h2>
       <p>Latest products</p>
 
+      <!-- Cicla nell'array dei prodotti e stampa immagine, titolo, prezzo, sconto e tiene conto dell'id dichiarato per utilizzarlo quando al mouseover deve mettere il div.check-->
       <div class="card" v-for="item in items" :key="id" @mouseover="item.isHovered = true"
         @mouseout="item.isHovered = false">
+        <!-- al passaggio del mouse il div.check viene visualizzato e all'uscita si nasconde -->
         <img :src="item.image" :alt="item.title">
         <h5>{{ item.title }}</h5>
         <span id="sales" v-show="item.sales">&dollar;35.00</span>
         <span>{{ item.price }}</span>
         <span id="tag" v-show="item.sales">Sale!</span>
 
-        <!-- View cart icon on hover -->
+        <!-- Div visualizzato al valore del mouseover -->
         <div class="check" v-show="item.isHovered">
           <font-awesome-icon icon="fa-regular fa-circle-check" />
           <span>VIEW CART</span>

@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      // Array con articoli blog
       articles: [
         {
           id: '1',
@@ -39,15 +40,17 @@ export default {
       <h2>Get the best tips &amp; tricks</h2>
       <h5>Recent articles</h5>
 
+      <!-- Cicla nell'array degli articoli e stampa immagine, titolo, data e tiene conto dell'id dichiarato per utilizzarlo quando al mouseover deve mettere il div.check-->
       <div class="articles" v-for="article in articles" :key="id" @mouseover="article.isHovered = true"
         @mouseout="article.isHovered = false">
+        <!-- al passaggio del mouse il div.check viene visualizzato e all'uscita si nasconde -->
         <a href="#">
           <img :src="article.image" :alt="article.title">
           <h3>{{ article.title }}</h3>
           <span>{{ article.date }}</span>
         </a>
 
-        <!-- View title on hover -->
+        <!-- Div visualizzato al valore del mouseover -->
         <div class="check" v-show="article.isHovered">
           <span>{{ article.title }}</span>
           <span>Tips &amp; tricks</span>
