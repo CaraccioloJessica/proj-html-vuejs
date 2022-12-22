@@ -89,7 +89,7 @@ export default {
 
 #kelp {
   background-color: $kelp;
-  height: 500px;
+  height: 350px;
   color: $white;
 
   .container {
