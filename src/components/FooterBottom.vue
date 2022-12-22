@@ -23,10 +23,18 @@ export default {
     </nav>
 
     <div id="brand">
-      <font-awesome-icon icon="fa-brands fa-facebook-f" />
-      <font-awesome-icon icon="fa-brands fa-twitter" />
-      <font-awesome-icon icon="fa-brands fa-instagram" />
-      <font-awesome-icon icon="fa-brands fa-youtube" />
+      <a href="#">
+        <font-awesome-icon icon="fa-brands fa-facebook-f" />
+      </a>
+      <a href="#">
+        <font-awesome-icon icon="fa-brands fa-twitter" />
+      </a>
+      <a href="#">
+        <font-awesome-icon icon="fa-brands fa-instagram" />
+      </a>
+      <a href="#">
+        <font-awesome-icon icon="fa-brands fa-youtube" />
+      </a>
     </div>
 
     <div id="copyright">
