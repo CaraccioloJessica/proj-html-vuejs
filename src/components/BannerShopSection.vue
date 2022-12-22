@@ -34,26 +34,34 @@ export default {
     <div class="container">
       <!-- Spedizione -->
       <div id="icons">
-        <font-awesome-icon icon="fa-solid fa-truck" />
-        <span>Free worldwide deliveries</span>
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-truck" />
+          <span>Free worldwide deliveries</span>
+        </a>
       </div>
 
       <!-- Negozi vicini -->
       <div id="icons">
-        <font-awesome-icon icon="fa-regular fa-map" />
-        <span>Find stores near you</span>
+        <a href="#">
+          <font-awesome-icon icon="fa-regular fa-map" />
+          <span>Find stores near you</span>
+        </a>
       </div>
 
       <!-- Prezzi migliori -->
       <div id="icons">
-        <font-awesome-icon icon="fa-solid fa-dollar" />
-        <span>Best prices guaranteed</span>
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-dollar" />
+          <span>Best prices guaranteed</span>
+        </a>
       </div>
 
       <!-- Carte di credito -->
       <div id="icons">
-        <font-awesome-icon icon="fa-regular fa-credit-card" />
-        <span>All credit card accepted</span>
+        <a href="#">
+          <font-awesome-icon icon="fa-regular fa-credit-card" />
+          <span>All credit card accepted</span>
+        </a>
       </div>
     </div>
   </section>
@@ -130,7 +138,8 @@ export default {
     align-items: center;
     gap: 32px;
 
-    #icons {
+    #icons,
+    a {
       width: 200px;
       text-align: center;
 
